@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap");
+
+:root {
+  --page-main: #ffffff;
+  --page-second: #000000;
+  --page-second-half: rgba(51, 51, 51, 0.5);
+  --page-third: #efa9a9;
+  --cont-padding: 20px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 var(--cont-padding);
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--page-main);
+  color: var(--page-second);
+}
+
+/*! NAVIGATION START*/
+
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.navigation__sub {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.bigger {
+  position: relative;
+  left: -12px;
+  font-size: 64px;
+}
+
+.hamburger {
+  all: unset;
+  height: 20px;
+  width: 60px;
+  border-bottom: 1px solid var(--page-second);
+  border-top: 1px solid var(--page-second);
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+}
+
+ul,
+li {
+  all: unset;
+}
+.shown {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.navigation__main {
+  width: 100%;
+  display: none;
+  justify-content: space-around;
+}
+
+.nav-links {
+  display: block;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: var(--page-second-half);
+  font-size: 16px;
+}
+
+.nav-links:hover,
+.nav-links:focus-visible {
+  color: var(--page-second);
+}
+
+@media (min-width: 800px) {
+  .navigation {
+    flex-direction: row;
+  }
+  .navigation__sub {
+    width: auto;
+  }
+  .navigation__main {
+    display: flex;
+    flex-direction: row;
+  }
+  nav {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+/*! NAVIGATION END */
+
+/* ! FOOTER START */
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.circle {
+  width: clamp(100px, 10%, 200px);
+  background: var(--page-main);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px 5px rgba(253, 120, 120, 0.5);
+  font-size: clamp(18px, 2vw, 30px);
+  text-decoration: none;
+  color: var(--page-second);
+  transition: all 100ms ease-in;
+}
+
+.circle:hover,
+.circle:focus {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 5px rgba(253, 120, 120, 0.75);
+}
+/* ! FOOTER END */
+
+/* ! HEADER START*/
+header {
+  width: 100%;
+  background: var(--page-second);
+  border-radius: min(40px, 60px);
+  padding: 6rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+}
+
+header .title {
+  font-weight: 900;
+  font-size: clamp(36px, 3.5vw, 48px);
+  color: var(--page-third);
+  text-align: center;
+  min-width: 30%;
+  max-width: 70%;
+}
+
+.image-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.image-holder img{
+    aspect-ratio: 314.46/263;
+    width: clamp(314px , 100%, 480px);
+}
+
+.image-bottom{
+    position: absolute;
+    bottom: -12px;
+    width: 99%;
+    max-width: 460px;
+    padding: .2rem 2rem;
+    background: var(--page-third);
+    color: var(--page-second);
+    border-radius: 45px;
+    font-weight: 900;
+    font-size: clamp(32px,2.5vw,38px);
+    text-align: center;
+}
+/* ! HEADER END*/
+
+
+/* ! SECTION CSS START*/
+section{
+    margin: 100px 0;
+}
+
+section h2{
+    all: unset;
+    color: var(--page-second-half);
+    font-weight: 500;
+    font-size: clamp(16px,  1.2vw,18px);
+    text-align: center;
+}
+/* ! SECTION CSS END */
+
+
+/*! ABOUT ME START */
+section#aboutme{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 60%;
+}
+section#aboutme h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: clamp(32px, 2.5vw , 42px);
+}
+
+.underline{
+    text-decoration: underline var(--page-third) 3px;
+}
+
+.text{
+    font-weight: 600;
+    font-size: clamp(22px, 2vw,32px);
+}
+/*! ABOUT ME END */
