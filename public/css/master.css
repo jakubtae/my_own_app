@@ -131,6 +131,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 70px;
+  padding: 2rem 0;
 }
 .circle {
   width: clamp(100px, 10%, 200px);
@@ -189,9 +190,10 @@ header .title {
 }
 
 .image-bottom{
+    all: unset;
     position: absolute;
-    bottom: -12px;
-    width: 99%;
+    bottom: 0;
+    width: calc(99% - 4rem);
     max-width: 460px;
     padding: .2rem 2rem;
     background: var(--page-third);
@@ -201,6 +203,8 @@ header .title {
     font-size: clamp(32px,2.5vw,38px);
     text-align: center;
 }
+
+
 /* ! HEADER END*/
 
 
@@ -215,6 +219,7 @@ section h2{
     font-weight: 500;
     font-size: clamp(16px,  1.2vw,18px);
     text-align: center;
+    text-transform: uppercase;
 }
 /* ! SECTION CSS END */
 
@@ -224,7 +229,7 @@ section#aboutme{
     display: flex;
     flex-direction: column;
     position: relative;
-    max-width: 60%;
+    width: 100%;
 }
 section#aboutme h3{
     text-align: center;
@@ -239,5 +244,6 @@ section#aboutme h3{
 .text{
     font-weight: 600;
     font-size: clamp(22px, 2vw,32px);
+    max-width: 1000px;
 }
 /*! ABOUT ME END */
