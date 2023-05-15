@@ -11,9 +11,6 @@ app.use(express.json())
 const mainRouter = require("./routes/main");
 app.use("/", mainRouter);
 
-const plRouter = require("./routes/pl");
-app.use("/pl", plRouter);
-
 app.listen(3000, () => {
     console.log(`App is working I guess`);
 })

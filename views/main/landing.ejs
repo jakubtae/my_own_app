@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/fontello/css/fontello.css">
-    <title>Jakub Tomczyk</title>
+    <title>Jakub Tomczyk - web developer & designer</title>
+    <meta name="description" content="If you are looking for a front-end web developer & designer - Here I am">
+    <meta name="keywords" content="Jakub Tomczyk, Portfolio, Tomczyk, Designer, Front-end, Web-developer">
+    <meta>
 </head>
 <body>
 
@@ -14,7 +17,7 @@
     <header>
         <div class="hero">
             <h1 class="name">Jakub Tomczyk</h1>
-            <h2 class="proffesion">Front-end developer & designer</h2>
+            <h2 class="proffesion"><%= locals.proffesion %></h2>
             <div class="mouse-icon">
                 <svg width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group 4">
@@ -28,7 +31,7 @@
         </div>
     </header>
     <section id="work">
-        <h2>Recent Work</h2>
+        <h2><%= locals.workh2 %></h2>
         <div class="projects-container">
             <div class="project">
                 <img src="./img/colors_design.png" alt="" class="project-img">
@@ -64,15 +67,17 @@
                 <img class="medium photo" src="./img/mainPhoto.jpg" alt="">
                 <img class="small photo" src="./img/mainPhoto.jpg" alt=""></div>
             <div class="text-container">
-                Hi, again I am <span class="gradient-move">Jakub</span>
-                I believe simplicity is ART
-                I enjoy working on projects that bring something to the WORLD
-                Except for programming and designing I am a big enjoy-er of physical activity
-                In 6 months I will advance to MERN-stack developer 
+                <div class="text-big">Hi, again I am <span class="gradient-move">Jakub</span></div>
+                <div class="text">I believe simplicity is ART</div>
+                <div class="text">I enjoy working on projects that bring something to the WORLD</div>
+                <div class="text">Except for programming and designing I am a big enjoy-er of physical activity</div>
+                <div class="text">In 6 months I will advance to MERN-stack developer </div>
             </div>
         </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+        <h4>Let's get in <span class="gradient-move">touch</span></h4>
+    </section>
     <%- include('../includes/footer')%>
     <script src="./js/blob.js"></script>
 </body>

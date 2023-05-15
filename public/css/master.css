@@ -59,7 +59,6 @@ nav li a:hover{
   text-decoration: underline 1px solid;
 }
 footer{
-  margin-top: 100px;
   width: 100%;
   border-top: 1px solid var(--page-sec);
   text-align: center;
@@ -280,6 +279,7 @@ section#about{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 60px;
 }
 
 
@@ -293,6 +293,13 @@ section#about h2{
   width: 100%;
   align-items: center;
   justify-content: space-around;
+}
+
+@media (width < 900px){
+  .about-info{
+    flex-direction: column;
+    gap: 100px;
+  }
 }
 
 .photos-container{
@@ -309,7 +316,7 @@ section#about h2{
   position: absolute;
 }
 .big{
-  width: 300px;
+  width: 350px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -327,19 +334,63 @@ section#about h2{
 }
 
 .text-container{
+  padding: 40px 0;
   width: clamp(300px, 50%, 800px);
   background: var(--page-sec);
   color: var(--page-main);
   box-shadow: 4px 4px 100px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (width < 600px){
+  .text-container{
+    padding: 15px 0;
+    width: 95%;
+  }
+}
+.text-big{
+  text-align: center;
+  font-size: clamp(40px, 4vw, 48px);
+  padding: 20px 0;
+}
+.text{
+  text-align: center;
+  font-size: clamp(28px, 3vw, 40px);
+  padding: 15px 15px;
 }
 
 .gradient-move{
-  /* background: linear-gradient(90deg, #9ACFFF 35.57%, #F26DF9 77.66%); */
-  background-color: #F26DF9 ;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+  background: linear-gradient(42deg, #9ACFFF 35.57%, #F26DF9 77.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ! ABOUT SECTION ENDS */
+
+/* ! CONTACT SECTION START */
+section#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 140px 10px;
+}
+section#contact h4{
+  all:unset;
+  text-align: center;
+  font-size: clamp(64px , 10vw , 160px);
+  text-transform: uppercase;
+}
+
+@media (width < 600px){
+section#contact h4{
+text-align: left;
+}
+}
+
+/* ! CONTACT SECTION END */
