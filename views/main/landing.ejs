@@ -48,14 +48,14 @@
     <section id="work">
         <h2><%= locals.workh2 %></h2>
         <div class="projects-container">
-        <% var i = 1 %>
+        <% var i = 0 %>
         <% locals.projects.forEach(project =>{ %>
             <div class="project" <% if(project.main === true){%>id="main"<%}%>>
                 <div class="project-img-cont"><img src="./img/<%= project.img%>" alt="" class="project-img"></div>
                 <div class="project-text">
                     <span class="project-type"><%=project.type%></span>
                     <h3 class="project-name"><%=project.name%></h3>
-                    <a href="/<%=locals.lang%>/projects/<%= i %>" class="project-more"><span><%=project.more%> <i class="icon-right"></i></span></a>
+                    <a href="/<%=locals.lang%>/projects/<%= i %>" class="project-more"><span><%=project.more%> <i class="icon-right-arr"></i></span></a>
                 </div>
             </div>
             <% i += 1 %>

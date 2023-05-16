@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/fontello/css/fontello.css">
+
     <title>Jakub Tomczyk - Projekt <%= project.name%></title>
     <meta name="description" content="If you are looking for a front-end web developer & designer - Here I am">
     <meta name="keywords" content="Jakub Tomczyk, Portfolio, Tomczyk, Designer, Front-end, Web-developer">
@@ -20,6 +22,25 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    Hello <%= project.name%>
+    <main>
+        <div class="project-card">
+            <div class="project-title">
+                <a href="../../#work"><i class="icon-left-arr"></i></a>
+                <div class="project-name"><%= project.name%></div>
+                <div class="project-type"><%= project.type%></div>
+            </div>
+            <div class="project-main">
+                <img src="/img/<%= project.img %>" alt="<%= project.name%> Photo" class="project-img">
+                <div class="project-desc">
+                    <% project.desc.forEach(text =>{%>
+                        <div><%= text%> <br/></div>
+                    <%})%>
+                    <% if(project.link != null){%>
+                        <a href="<%=project.link%>" target="_blank">See here</a>    
+                    <%}%>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

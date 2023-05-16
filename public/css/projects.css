@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+:root{
+  --page-main: #fff;
+  --page-sec: #1c1c1c;
+  --page-third: rgba(154, 207, 255, 0.5);
+}
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+body{
+  margin: 0;
+  background: var(--page-main);
+  font-family: 'Castoro', serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card{
+    width: 80%;
+    aspect-ratio: 16/9;
+    background: var(--page-main);
+    border: 1px solid var(--page-sec);
+    border-radius: 30px;
+    box-shadow: 0 0 50px 20px rgba(0,0,0, .15);
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+
+.project-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-title a{
+    color: var(--page-sec);
+    font-size: 40px;
+    position: absolute;
+    left: 2rem;
+    transition: all 100ms ease-in-out;
+}
+.project-title a:hover{
+    transform: scale(1.2);
+}
+.project-name{
+    font-size: clamp(36px , 4vw , 64px);
+    text-transform: uppercase;
+    word-spacing: .6em;
+    text-align: center;
+}
+
+.project-type{
+    font-size: clamp(14px, 1vw, 20px);
+    text-align: center;
+
+}
+.project-main{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--page-sec);
+}
+
+@media (width < 1250px){
+
+    .project-card{
+        aspect-ratio: 9/16;
+    }
+    .project-main{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 40px;
+    }
+}
+
+.project-main > *{
+    border: 1px solid var(--page-sec);
+    border-radius: 30px;
+}
+
+.project-img{
+    height: clamp(300px,80%, 1200px);
+    width: clamp(350px,80%, 1200px);
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 0 auto;
+}
+.project-desc{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    height: 80%;
+    width: 80%;
+    font-size: clamp(16px,1vw,20px);
+}
+
+@media (width < 650px){
+    .project-title a{
+        left: .5rem;
+    }
+    .project-card{
+        width: 95%;
+    }
+}
+
+@media (width < 450px){
+    .project-title a{
+        top: -3.2rem;
+    }
+}

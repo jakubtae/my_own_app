@@ -1,2 +1,3 @@
 
-.icon-right:before { content: '\e800'; } /* '' */
+.icon-right-arr:before { content: '\e800'; } /* '' */
+.icon-left-arr:before { content: '\e801'; } /* '' */
