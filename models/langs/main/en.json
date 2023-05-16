@@ -1,0 +1,42 @@
+{
+    "lang" : "en",
+    "nav" : [
+            "Work",
+            "About",
+            "Contact"
+    ],
+    "proffesion" : "Front-end developer & designer",
+    "workh2" : "Recent Work",
+    "projects" :[
+        {
+            "img" : "colors_design.png",
+            "type" : "Design & Web",
+            "name" : "Colors Project",
+            "more" : "See more"
+        },
+        {
+            "img" : "galeria_design.png",
+            "type" : "Design & Web",
+            "name" : "Local Restaurant Page",
+            "more" : "See more",
+            "main" : true
+        },
+        {
+            "img" : "exam_design.png",
+            "type" : "Design & Web",
+            "name" : "Exam Solving Page",
+            "more" : "See more"
+        }
+    ],
+    "abouth2" : "About Me",
+    "textBig" : "Once more, I'm ",
+    "text" : [
+        "I believe simplicity is ART",
+        "I enjoy working on projects that bring something to the WORLD",
+        "Except for programming and designing I am a big enjoy-er of physical activity",
+        "I will become a MERN-stack developer in six months"
+    ],
+    "contacttext" : "Let's get in ",
+    "contactspan" : "touch"
+
+}

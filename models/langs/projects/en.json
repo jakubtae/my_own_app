@@ -1,0 +1,23 @@
+{
+    "lang" : "en",
+  "projects": [
+    {
+      "img": "colors_design.png",
+      "type": "Design & Web",
+      "name": "Colors Project",
+      "desc" : "Project that required a lot of BACKEND features and colors understending"
+    },
+    {
+      "img": "galeria_design.png",
+      "type": "Design & Web",
+      "name": "Local Restaurant Page",
+      "desc":""
+    },
+    {
+      "img": "exam_design.png",
+      "type": "Design & Web",
+      "name": "Exam Solving Page",
+      "desc":""
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+    "lang" : "pl",
+    "nav" : [
+        "Projekty",
+        "O mnie",
+        "Kontakt"
+    ],
+    "proffesion" : "Front-end developer & designer",
+    "workh2" : "Ostatnie Projekty",
+    "projects" :[
+        {
+            "img" : "colors_design.png",
+            "type" : "Design & Web",
+            "name" : "Colors Project",
+            "more" : "Zobacz więcej"
+        },
+        {
+            "img" : "galeria_design.png",
+            "type" : "Design & Web",
+            "name" : "Strona Restauracji",
+            "more" : "Zobacz więcej",
+            "main" : true
+        },
+        {
+            "img" : "exam_design.png",
+            "type" : "Design & Web",
+            "name" : "Strona Exam Solver",
+            "more" : "Zobacz więcej"
+        }
+    ],
+    "abouth2" : "O mnie",
+    "textBig" : "Jeszcze raz, jestem ",
+    "text" : [
+        "Wierzę, że prostota to SZTUKA",
+        "Lubię pracować nad inicjatywami które służą światu",
+        "Oprócz programowania i projektowania jestem aktywny fizycznie",
+        "Zostanę programistą MERN-stack w ciągu sześciu miesięcy"
+    ],
+    "contacttext" : "Nawiążmy ",
+    "contactspan" : "kontakt"
+
+}

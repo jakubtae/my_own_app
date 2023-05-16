@@ -231,11 +231,29 @@ section#work h2{
   }
 
 }
-.project-img{
+
+.project-img-cont{
   width: 100%;
   border: 1px solid var(--page-sec);
   border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
+
+.project-img{
+  width: calc(100% + 2px);
+  background-size: fill;
+  background-position: 50% 50%;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+
+.project-img:hover{
+  transform: scale(1.05);
+}
+
 .project-text{
   display: flex;
   flex-direction: column;

@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%=locals.lang%>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/master.css">
-    <link rel="stylesheet" href="./css/fontello/css/fontello.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="/css/fontello/css/fontello.css">
     <title>Jakub Tomczyk - web developer & designer</title>
     <meta name="description" content="If you are looking for a front-end web developer & designer - Here I am">
     <meta name="keywords" content="Jakub Tomczyk, Portfolio, Tomczyk, Designer, Front-end, Web-developer">
-    <meta>
+    <!-- ! FAVICON -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/icones/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icones/favicon-16x16.png">
+    <link rel="manifest" href="/img/icones/site.webmanifest">
+    <link rel="mask-icon" href="/img/icones/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- ! FAVICON -->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
-    <%- include('../includes/navbar')%>
+    <nav>
+        <ul class="navigation__main">
+          <li><a href="#work" class="nav-links"><%=locals.nav[0]%></a></li>
+          <li><a href="#about" class="nav-links"><%=locals.nav[1]%></a></li>
+          <li><a href="#contact" class="nav-links"><%=locals.nav[2]%></a></li>
+        </ul>
+      </nav>
+      
     <header>
         <div class="hero">
             <h1 class="name">Jakub Tomczyk</h1>
@@ -33,52 +48,41 @@
     <section id="work">
         <h2><%= locals.workh2 %></h2>
         <div class="projects-container">
-            <div class="project">
-                <img src="./img/colors_design.png" alt="" class="project-img">
+        <% var i = 1 %>
+        <% locals.projects.forEach(project =>{ %>
+            <div class="project" <% if(project.main === true){%>id="main"<%}%>>
+                <div class="project-img-cont"><img src="./img/<%= project.img%>" alt="" class="project-img"></div>
                 <div class="project-text">
-                    <span class="project-type">Design & Web</span>
-                    <h3 class="project-name">Colors Project</h3>
-                    <a href="#" class="project-more"><span>See more <i class="icon-right"></i></span></a>
+                    <span class="project-type"><%=project.type%></span>
+                    <h3 class="project-name"><%=project.name%></h3>
+                    <a href="/<%=locals.lang%>/projects/<%= i %>" class="project-more"><span><%=project.more%> <i class="icon-right"></i></span></a>
                 </div>
             </div>
-            <div class="project" id="main">
-                <img src="./img/galeria_design.png" alt="Restaurant Page Preview" class="project-img">
-                <div class="project-text">
-                    <span class="project-type">Design & Web</span>
-                    <h3 class="project-name">Local Restaurant Page</h3>
-                    <a href="#"  class="project-more"><span>See more <i class="icon-right"></i></span></a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="./img/exam_design.png" alt="" class="project-img">
-                <div class="project-text">
-                    <span class="project-type">Design & Web</span>
-                    <h3 class="project-name">Exam Solving Page</h3>
-                    <a href="#" class="project-more"><span>See more <i class="icon-right"></i></span></a>
-                </div>
-            </div>
+            <% i += 1 %>
+        <%})%>
         </div>
     </section>
     <section id="about">
-        <h2>About Me</h2>
+        <h2><%= locals.abouth2 %></h2>
         <div class="about-info">
             <div class="photos-container">
                 <img class="big photo" src="./img/mainPhoto.jpg" alt="">
                 <img class="medium photo" src="./img/mainPhoto.jpg" alt="">
                 <img class="small photo" src="./img/mainPhoto.jpg" alt=""></div>
             <div class="text-container">
-                <div class="text-big">Hi, again I am <span class="gradient-move">Jakub</span></div>
-                <div class="text">I believe simplicity is ART</div>
-                <div class="text">I enjoy working on projects that bring something to the WORLD</div>
-                <div class="text">Except for programming and designing I am a big enjoy-er of physical activity</div>
-                <div class="text">In 6 months I will advance to MERN-stack developer </div>
+                <div class="text-big"><%= locals.textBig%> <span class="gradient-move">Jakub</span></div>
+                <% locals.text.forEach(text =>{%>
+                    <div class="text"><%=text%></div>
+                <%})%>
             </div>
         </div>
     </section>
     <section id="contact">
-        <h4>Let's get in <span class="gradient-move">touch</span></h4>
+        <h4><%=locals.contacttext%><span class="gradient-move"><%=locals.contactspan%></span></h4>
     </section>
-    <%- include('../includes/footer')%>
+    <footer>
+        <a  class="circle" href="mailto:contact@jakubtomczyk.com">contact@jakubtomczyk.com</a>
+    </footer>
     <script src="./js/blob.js"></script>
 </body>
 </html>
