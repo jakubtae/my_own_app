@@ -2,7 +2,8 @@ const express = require('express');
 const { parse } = require('path');
 const router = express.Router();
 const fs = require('fs');
-const fetch = require('node-fetcher');
+const fetch = require("node-fetch"); 
+
 router.get('/', async (req, res) => {
     res.redirect("/en")
 })
