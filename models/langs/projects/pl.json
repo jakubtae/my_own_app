@@ -1,0 +1,31 @@
+{
+    "lang" : "pl",
+  "projects": [
+    {
+      "img": "colors_design.png",
+      "type": "Design & Web || Projekt Lokalny",
+      "name": "Colors Project",
+      "desc" : [
+      "The COLORS app is a cutting-edge development and design project that revolutionizes color interaction. It features random color generation, color palette creation, gradient generation, and template previews.",
+      "Users can instantly discover new color combinations, create harmonious palettes, produce captivating gradients, and visualize colors on templates. This app empowers designers and artists to explore and unleash their creativity with ease and precision."
+      ]
+    },
+    {
+      "img": "galeria_design.png",
+      "type": "Design & Web",
+      "name": "Strona Restauracji",
+      "desc": [
+        "What","The Fuck"
+      ],
+      "link" : "http://www.restauracja-galeria.pl/"
+    },
+    {
+      "img": "exam_design.png",
+      "type": "Design & Web",
+      "name": "YT creator + React",
+      "desc":[
+        "What","The Fuck"
+      ]
+    }
+  ]
+}

@@ -51,7 +51,7 @@
         <% var i = 0 %>
         <% locals.projects.forEach(project =>{ %>
             <div class="project" <% if(project.main === true){%>id="main"<%}%>>
-                <div class="project-img-cont"><img src="./img/<%= project.img%>" alt="" class="project-img"></div>
+                <div class="project-img-cont"><img src="/img/<%= project.img%>" alt="" class="project-img"></div>
                 <div class="project-text">
                     <span class="project-type"><%=project.type%></span>
                     <h3 class="project-name"><%=project.name%></h3>
@@ -66,9 +66,9 @@
         <h2><%= locals.abouth2 %></h2>
         <div class="about-info">
             <div class="photos-container">
-                <img class="big photo" src="./img/mainPhoto.jpg" alt="">
-                <img class="medium photo" src="./img/mainPhoto.jpg" alt="">
-                <img class="small photo" src="./img/mainPhoto.jpg" alt=""></div>
+                <img class="big photo" src="/img/mainPhoto.jpg" alt="">
+                <img class="medium photo" src="/img/mainPhoto.jpg" alt="">
+                <img class="small photo" src="/img/mainPhoto.jpg" alt=""></div>
             <div class="text-container">
                 <div class="text-big"><%= locals.textBig%> <span class="gradient-move">Jakub</span></div>
                 <% locals.text.forEach(text =>{%>
@@ -83,6 +83,6 @@
     <footer>
         <a  class="circle" href="mailto:contact@jakubtomczyk.com">contact@jakubtomczyk.com</a>
     </footer>
-    <script src="./js/blob.js"></script>
+    <script src="/js/blob.js"></script>
 </body>
 </html>
