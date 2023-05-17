@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.json())
-
+app.set('trust proxy', true)
 const mainRouter = require("./routes/main");
 app.use("/", mainRouter);
 

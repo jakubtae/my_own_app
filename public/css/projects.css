@@ -128,3 +128,13 @@ main{
         top: -3.2rem;
     }
 }
+
+.project-desc a {
+    width: fit-content;
+    text-decoration: none;
+    color: var(--page-sec);
+}
+
+.project-desc a:hover{
+    border-bottom: 1px solid var(--page-sec);
+}

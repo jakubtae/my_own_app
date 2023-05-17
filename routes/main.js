@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
 })
 
 
-router.get('/:language', async (req, res) => {
+router.get('/:language', checkLocation ,async (req, res) => {
     try{
         if(req.params != "favicon.ico"){
             const filePath = "./models/langs/main/"+req.params.language + ".json";
@@ -40,4 +40,18 @@ router.get('/:language/projects/:pid', async (req,res)=>{
     }
 })
 
+
+async function checkLocation(req,res,next){
+    const link = "http://ip-api.com/json/"+req.ip;
+    const response = await fetch(link);
+    const data = await response.json();
+    console.log(data.countryCode);
+    if(data.countryCode != "PL" && req.params.language === "pl"){
+        return res.redirect("/en");
+    }
+    if(data.countryCode != "PL" && req.params.language === "en"){
+        return res.redirect("/pl")
+    }
+    next();
+}
 module.exports = router;
