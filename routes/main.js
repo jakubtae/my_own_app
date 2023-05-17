@@ -85,10 +85,12 @@ async function checkLang(req, res, next) {
   if (data.countryCode !== "PL" && req.params.language === "pl") {
     return res.redirect("/en"+req.originalUrl.slice(3));
   }
-  if (data.countryCode === "PL" && req.params.language === "en" || data.countryCode === "PL" && req.params.language === "pl") {
+  if (data.countryCode === "PL" && req.params.language === "en") {
     return res.redirect("/pl"+req.originalUrl.slice(3));
   }
-  next();
+  else{
+    next();
+  }
 }
 
 module.exports = router;
