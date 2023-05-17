@@ -15,7 +15,7 @@
       "type": "Design & Web",
       "name": "Local Restaurant Page",
       "desc": [
-        "What","The Fuck"
+        "Local Restaurant Page was a renewal of Galeria Restaurant old Page to make it look modern and classy.","This project was done with vanilla css and js."
       ],
       "link" : "http://www.restauracja-galeria.pl/"
     },
@@ -24,7 +24,8 @@
       "type": "Design & Web",
       "name": "Exam Solving Page",
       "desc":[
-        "What","The Fuck"
+        "The EXAM SOLVING PAGE is a backend service that simplifies boring and pointless process of taking exams on a certain webapge.",
+        "This project was done solely to simplify my and my classmates life. It required analyzing and understanding target website, gathering proper answers, and creating simple backend structure with a proper authentication mechanism and Admin Panel for managing users."
       ]
     }
   ]

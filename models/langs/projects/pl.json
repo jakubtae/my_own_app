@@ -6,8 +6,8 @@
       "type": "Design & Web || Projekt Lokalny",
       "name": "Colors Project",
       "desc" : [
-      "The COLORS app is a cutting-edge development and design project that revolutionizes color interaction. It features random color generation, color palette creation, gradient generation, and template previews.",
-      "Users can instantly discover new color combinations, create harmonious palettes, produce captivating gradients, and visualize colors on templates. This app empowers designers and artists to explore and unleash their creativity with ease and precision."
+      "Aplikacja COLORS to najnowocześniejszy projekt rozwojowy i projektowy, który rewolucjonizuje interakcję kolorów. Oferuje losowe generowanie kolorów, tworzenie palety kolorów, generowanie gradientów i podgląd szablonów.",
+      "Użytkownicy mogą natychmiast odkrywać nowe kombinacje kolorów, tworzyć harmonijne palety, tworzyć urzekające przejścia tonalne i wizualizować kolory na szablonach. Ta aplikacja umożliwia projektantom i artystom odkrywanie i uwalnianie kreatywności z łatwością i precyzją."
       ]
     },
     {
@@ -15,16 +15,17 @@
       "type": "Design & Web",
       "name": "Strona Restauracji",
       "desc": [
-        "What","The Fuck"
+        "Strona Lokalnej Restauracji była odnowieniem starej strony Galerii Restauracji, aby wyglądała nowocześnie iz klasą.","Ten projekt został wykonany przy użyciu czystegocss i js."
       ],
       "link" : "http://www.restauracja-galeria.pl/"
     },
     {
       "img": "exam_design.png",
       "type": "Design & Web",
-      "name": "YT creator + React",
+      "name": "YT creator & React",
       "desc":[
-        "What","The Fuck"
+        "Jest to projekt stworzony z myślą uproszczenia tworzenia prostych filmów na social media bez zbędnego wysiłku.",
+        "Strona na podstawie tytułu historii wygeneruje Ci historię, a przy przesłaniu nagrania twojego głosu, powtarzalnego filmu i dźwięku w tle generuj film z napisami. "
       ]
     }
   ]
