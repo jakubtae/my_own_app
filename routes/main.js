@@ -2,14 +2,13 @@ const express = require('express');
 const { parse } = require('path');
 const router = express.Router();
 const fs = require('fs');
-const fetch = require("node-fetch"); 
 
 router.get('/', async (req, res) => {
     res.redirect("/en")
 })
 
 
-router.get('/:language', checkLocation ,async (req, res) => {
+router.get('/:language',async (req, res) => {
     try{
         if(req.params != "favicon.ico"){
             const filePath = "./models/langs/main/"+req.params.language + ".json";
@@ -41,17 +40,4 @@ router.get('/:language/projects/:pid', async (req,res)=>{
     }
 })
 
-
-async function checkLocation(req,res,next){
-    const link = "http://ip-api.com/json/"+req.ip;
-    const response = await fetch(link);
-    const data = await response.json();
-    if(data.countryCode != "PL" && req.params.language === "pl"){
-        res.redirect("/en");
-    }
-    if(data.countryCode === "PL" && req.params.language === "en"){
-        res.redirect("/pl")
-    }
-    else next();
-}
 module.exports = router;
