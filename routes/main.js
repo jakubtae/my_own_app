@@ -47,10 +47,11 @@ async function checkLocation(req,res,next){
     const response = await fetch(link);
     const data = await response.json();
     if(data.countryCode != "PL" && req.params.language === "pl"){
-        return res.redirect("/en");
+        res.redirect("/en");
     }
     if(data.countryCode === "PL" && req.params.language === "en"){
-        return res.redirect("/pl")
+        res.redirect("/pl")
     }
+    else next();
 }
 module.exports = router;
