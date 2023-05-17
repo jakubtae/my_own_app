@@ -4,7 +4,7 @@ const router = express.Router();
 const fs = require('fs');
 
 router.get('/', async (req, res) => {
-    res.redirect("/en")
+    res.redirect("/pl")
 })
 
 
