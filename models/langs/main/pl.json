@@ -22,14 +22,14 @@
             "main" : true
         },
         {
-            "img" : "exam_design.png",
+            "img" : "vidient_design.png",
             "type" : "Design & Web",
-            "name" : "YT creator + React",
+            "name" : "ViDient App",
             "more" : "Zobacz więcej"
         }
     ],
     "abouth2" : "O mnie",
-    "textBig" : "Jeszcze raz, jestem ",
+    "textBig" : "Cześć , jestem Jakub ",
     "text" : [
         "Wierzę, że prostota to SZTUKA",
         "Lubię pracować nad inicjatywami które służą światu",

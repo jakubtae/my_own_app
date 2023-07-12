@@ -20,12 +20,12 @@
       "link" : "http://www.restauracja-galeria.pl/"
     },
     {
-      "img": "exam_design.png",
+      "img": "vidient_design.png",
       "type": "Design & Web",
-      "name": "YT creator & React",
+      "name": "ViDient App",
       "desc":[
         "Jest to projekt stworzony z myślą uproszczenia tworzenia prostych filmów na social media bez zbędnego wysiłku.",
-        "Strona na podstawie tytułu historii wygeneruje Ci historię, a przy przesłaniu nagrania twojego głosu, powtarzalnego filmu i dźwięku w tle generuj film z napisami. "
+        "Strona na podstawie tytułu historii wygeneruje Ci historię, a przy przesłaniu nagrania twojego głosu, powtarzalnego filmu lub kolażu zdjęć i dźwięku w tle generuj film z napisami. "
       ]
     }
   ]
